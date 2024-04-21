@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+
+  font-size: 12px;
+  background-color: rgb(119, 114, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(25, 46, 77);
+}
+.container {
+  background-color: white;
+}
+main {
+  background: url("https://images.unsplash.com/photo-1575971189451-dca5dd50b693?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+.first-text {
+  display: flex;
+  justify-content: space-between;
+}
+.first-text button {
+  color: white;
+  background-color: rgb(134, 89, 218);
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+}
+.first-bold {
+  font-weight: 700;
+  font-size: 15px;
+}
+.first-bold2 {
+  font-weight: 600;
+}
+.first-img-container {
+  display: flex;
+  justify-content: center;
+}
+.first-img-container img {
+  height: 80px;
+  width: 80px;
+  border-radius: 60%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.second-text {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.third-one-btn {
+  height: 2.5rem;
+  margin-block-start: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.third-one-btn button {
+  cursor: pointer;
+  width: 34%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.Follow-btn {
+  border-top-left-radius: 8rem;
+  border-bottom-left-radius: 8rem;
+}
+.Message-btn {
+  border-top-right-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+}
+.white-one {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+.img-container {
+  padding: 1px;
+}
+.first-img img {
+  height: 90px;
+  width: 101px;
+  object-fit: cover;
+}
+.seond-img img {
+  object-fit: cover;
+  display: inline-block;
+  flex-direction: row;
+  height: 100px;
+  width: 155px;
+}
+.third-img img {
+  height: 60px;
+  width: 100%;
+  object-fit: cover;
+}
+.david {
+  color: rgb(247, 247, 252);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+i,
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(214, 184, 127);
+}
+.less,
+.greater {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(245, 245, 245);
+}
+.less:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+}
+.greater:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 9px;
+  }
+  .first-img img {
+    height: 60px;
+    width: 72px;
+    object-fit: cover;
+  }
+
+  .seond-img img {
+    object-fit: cover;
+    display: inline-block;
+    flex-direction: row;
+    height: 60px;
+    width: 111px;
+  }
+  .first-text button {
+    display: none;
+  }
+  .david {
+    margin-left: 80px;
+    position: relative;
+    bottom: 5px;
+  }
+  .first-img-container img {
+    height: 50px;
+    width: 50px;
+  }
+  .first-bold {
+    font-weight: 700;
+    font-size: 10px;
+  }
+  .third-one-btn {
+    height: 1.5rem;
+    margin-block-start: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .third-one-btn button {
+    cursor: pointer;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+}
